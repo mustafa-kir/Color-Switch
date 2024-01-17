@@ -64,7 +64,7 @@ public class TopKontrolu : MonoBehaviour {
             }
             return;
         }
-        if(collision.tag != mevcutRenk  && collision.tag != "SkoruArttir" && collision.tag != "Zemin" && collision.tag == "Finish")
+        if((collision.tag != mevcutRenk && collision.tag != "SkoruArttir" && collision.tag != "Zemin") || collision.tag == "Finish")
         {
             //SceneManager.LoadScene(0);
             skor = 0;
